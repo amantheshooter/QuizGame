@@ -66,8 +66,15 @@ class MainActivity : AppCompatActivity() {
             text_guess.setText("")
             score.visibility = View.GONE
             rest.visibility = View.GONE
-            setUpUiData(getRandomElement(myList!!))
+            setUpUiDataRefresh(getRandomElement(myList!!))
         }
+    }
+
+    private fun setUpUiDataRefresh(randomElement: LogoData) {
+        with(this)
+            .load(randomElement.imgUrl)
+            .into(logo);
+        correctAnswer = randomElement.name!!
     }
 
     private fun validateAnswer(textGuess: EditText?): Boolean {
