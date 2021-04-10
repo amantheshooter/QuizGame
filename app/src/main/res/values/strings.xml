@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">LogoQuizGame</string>
+    <string name="reset">Reset</string>
+    <string name="guess_this_logo">Guess this logo</string>
+    <string name="done">Done</string>
+</resources>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginTop="@dimen/margin_36"
+        android:gravity="center"
+        android:text="00:00"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="@dimen/text_20" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/margin_16"
+            android:scaleType="fitCenter"
+            android:src="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/margin_16"
+            android:background="@android:color/white"
+            android:gravity="center_horizontal"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_26"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/rest"
+            android:layout_width="88dp"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_16"
+            android:layout_marginBottom="@dimen/margin_16"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:text="@string/reset"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_26"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="@dimen/margin_16"
+        android:gravity="center_horizontal"
+        android:text="@string/guess_this_logo"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_26" />
+
+    <EditText
+        android:id="@+id/text_guess"
+        android:layout_width="300dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="@dimen/margin_16"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_24"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/done"
+        android:layout_width="100dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="@dimen/margin_16"
+        android:background="@color/colorPrimary"
+        android:gravity="center_horizontal"
+        android:text="@string/done"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_26"
+        android:textStyle="bold" />
+
+</LinearLayout>
